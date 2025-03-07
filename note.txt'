@@ -1,0 +1,175 @@
+- a gaboleh ketemu dengan u
+- a gaboleh ketemu dengan a
+- the step must complete in each machine* steps_padat a-f or steps_becek u-z, kalo ga complete under time_limit kill* make condition
+question: apakah each machine step berurut from a to z?
+
+- end_time exceed time_limit* DONE 
+
+- adjust time_limit for each machine not all machine sum
+machine a = 1440, machine b = 1440, machine c = 1440*DONE, NEED TESTING
+
+
+NEXT REVAMP
+- make data input for when machine is turn on & on what day? 
+
+
+command list
+
+- streamlit run: streamlit run schedulerOptimized.py
+- streamlit install: pip install streamlit
+
+
+
+
+--------------430 test data limit 500--------------
+
+C:\Users\gcsen\work\py_sab>py schedulerFirst.py
+Waktu isi padat: 40
+Waktu cuci air recycling: 40
+Waktu cuci air bersih: 40
+Waktu second pressing: 40
+Waktu cuci air bersih 2: 40
+Waktu bongkar padat: 40
+Waktu isi becek: 40
+Waktu cuci air recycling: 40
+Waktu cuci air bersih: 40
+Waktu second pressing: 40
+Waktu bongkar becek: 30
+    Timeframe Machine 1 Machine 2 Machine 3
+0           0                             U
+1          10                             U
+2          20                             U
+3          30                             U
+4          40                             W
+5          50                             W
+6          60                             W
+7          70                             W
+8          80                             X
+9          90                             X
+10        100                             X
+11        110                             X
+12        120                             Y
+13        130                             Y
+14        140                             Y
+15        150                             Y
+16        160                             Z
+17        170                             Z
+18        180                             Z
+19        190         A                   U
+20        200         A                   U
+21        210         A                   U
+22        220         A                   U
+23        230         B         A         W
+24        240         B         A         W
+25        250         B         A         W
+26        260         B         A         W
+27        270         C         B         X
+28        280         C         B         X
+29        290         C         B         X
+30        300         C         B         X
+31        310         D         C         Y
+32        320         D         C         Y
+33        330         D         C         Y
+34        340         D         C         Y
+35        350         E         D         Z
+36        360         E         D         Z
+37        370         E         D         Z
+38        380         E         D
+39        390         F         E
+40        400         F         E
+41        410         F         E
+42        420         F         E
+43        430         A         F
+44        440         A         F
+45        450         A         F
+46        460         A         F
+47        470         B         A
+48        480         B         A
+49        490         B         A
+50        500         B         A
+
+Total supplies produced: 4
+Total finished goods produced: 4
+0
+
+--------------430 test data limit 500--------------
+
+--------------110 test data limit 500--------------
+C:\Users\gcsen\work\py_sab>py schedulerFirst.py
+Waktu isi padat: 10
+Waktu cuci air recycling: 10
+Waktu cuci air bersih: 10
+Waktu second pressing: 10
+Waktu cuci air bersih 2: 10
+Waktu bongkar padat: 10
+Waktu isi becek: 10
+Waktu cuci air recycling: 10
+Waktu cuci air bersih: 10
+Waktu second pressing: 10
+Waktu bongkar becek: 10
+    Timeframe Machine 1 Machine 2 Machine 3
+0           0                             U
+1          10                             W
+2          20                             X
+3          30                             Y
+4          40                             Z
+5          50         A                   U
+6          60         B         A         W
+7          70         C         B         X
+8          80         D         C         Y
+9          90         E         D         Z
+10        100         F         E         U
+11        110         A         F         W
+12        120         B         A         X
+13        130         C         B         Y
+14        140         D         C         Z
+15        150         E         D         U
+16        160         F         E         W
+17        170         A         F         X
+18        180         B         A         Y
+19        190         C         B         Z
+20        200         D         C         U
+21        210         E         D         W
+22        220         F         E         X
+23        230         A         F         Y
+24        240         B         A         Z
+25        250         C         B         U
+26        260         D         C         W
+27        270         E         D         X
+28        280         F         E         Y
+29        290         A         F         Z
+30        300         B         A         U
+31        310         C         B         W
+32        320         D         C         X
+33        330         E         D         Y
+34        340         F         E         Z
+35        350         A         F         U
+36        360         B         A         W
+37        370         C         B         X
+38        380         D         C         Y
+39        390         E         D         Z
+40        400         F         E
+41        410         A         F
+42        420         B         A
+43        430         C         B
+44        440         D         C
+45        450         E         D
+46        460         F         E
+47        470         A         F
+48        480         B         A
+49        490         C         B
+50        500
+
+Total supplies produced: 16
+Total finished goods produced: 28
+0
+--------------110 test data limit 500--------------
+
+
+--------------SUMMARY--------------
+
+inconsistent data on new code on timeframe 500 on 430 test data
+- in new code timeframe 500 is blank
+- in old code timeframe 500 is filled
+
+
